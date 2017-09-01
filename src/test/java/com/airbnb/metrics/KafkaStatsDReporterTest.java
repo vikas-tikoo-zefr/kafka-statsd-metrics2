@@ -49,7 +49,7 @@ public class KafkaStatsDReporterTest {
     Metric metric = new Metric() {
       @Override
       public MetricName metricName() {
-        return new MetricName("test-metric", "group");
+        return new MetricName("test-metric", "group", "desc", null);
       }
 
       @Override
