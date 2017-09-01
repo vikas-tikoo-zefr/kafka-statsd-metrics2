@@ -6,16 +6,11 @@ version := "1.0"
 scalaVersion := "2.11.8"
 
 val kafkaVersion = "0.11.0.0"
-val artifactory = "https://zefr.jfrog.io/zefr"
 val confluentVersion = ""
 
-resolvers += "Artifactory Maven Releases" at s"$artifactory/libs-releases"
-resolvers += "Artifactory SBT Releases" at s"$artifactory/sbt-releases"
 resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
-resolvers += "Artifactory Maven Snapshots" at s"$artifactory/libs-snapshots"
-resolvers += "Artifactory SBT Snapshots" at s"$artifactory/sbt-snapshots"
-resolvers +=  "Confluent repository" at "http://packages.confluent.io/maven/"
+
 
 //val mavenLocal = "Local Maven" at Path.userHome.asFile.toURI.toURL + ".m2/repository"
 //resolvers += Resolver.mavenLocal
